@@ -12,7 +12,8 @@ body {
     padding: 0;
     margin: 0;
     font-family: sans-serif;
-    color: rgba(250, 248, 248, 0.989);
+    background-color: #FAF9F6 !important;
+    ;
 }
 
 /*--------navbar-----------*/
@@ -126,46 +127,72 @@ body {
 
 .info {
     margin-top: 60px;
-    margin-bottom: 60px;
+    margin-bottom: 0px;
+}
+.box{
+    display: flex;  
+    justify-content: center;  
+    align-items: center;  
 }
 
 .create-img {
     background-repeat: no-repeat;
     background-size: cover;
-    height: 400px;
-    width: 400px;
-    border-radius: 200px;
-}
-.create-img1 {
-    background-repeat: no-repeat;
-    background-size: cover;
     height: 250px;
     width: 250px;
-    border-radius: 150px;
-}
-
-.recipe-link-l {
-    position: absolute;
-    right: 335px;
-    top: 250px;
-    color: white;
-    list-style-type: none;
-    text-decoration: none;
-    font-size: 30px;
-    text-shadow: 3px 3px black;
-}
-.recipe-link-r{
-    position: absolute;
-    left: 300px;
-    top: 250px;
-    color: white;
-    list-style-type: none;
-    text-decoration: none;
-    font-size: 30px;
-    text-shadow: 3px 3px black;
-
-}
+    border-radius: 125px;
+  }
 
 .foot-logo {
     padding-left: 80px;
+}
+
+.title {
+    margin-bottom: 80px;
+}
+
+.btn {
+    background: #717070 !important;
+    top: 500px;
+    padding: 1.5rem 3rem;
+    display: inline-block;
+    text-transform: none;
+    color: #fff !important;
+    transition: all 0.5s;
+
+}
+
+.btn:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.btn span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.btn span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.btn:hover span {
+    padding-right: 25px;
+}
+
+.btn:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+
+.wrapper-btn {
+    margin-bottom: 200px;
 }
